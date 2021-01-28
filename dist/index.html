@@ -19,6 +19,59 @@
     
 </head>
 <body>
+  <div id="container">
+    <nav>
+      <p>todoList: <span class="user-name">User</span></p>
+    </nav>
+    <main>
+      <div id="projects">
+        <form id="form-project">
+          <input
+            type="text"
+            name="project-name"
+            id="project-name"
+            placeholder="Your new project"
+          />
+          <input type="submit" value="Create new" />
+        </form>
+        <div class="card"></div>
+      </div>
+      <div id="tasks" class="card">
+        <form id="form-task">
+          <input
+            type="text"
+            name="task-name"
+            id="task-name"
+            placeholder="Your task"
+          />
+          <input type="date" name="task-date" id="task-date"/>
+          <select name="task-priority" id="task-priority">
+            <option value="urgent">urgent</option>
+            <option value="normal">normal</option>
+          </select>
+          <input type="submit" value="+" />
+        </form>
+        <div id="task-container"></div>
+      </div>
+    </main>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <form id="form-task-edit">
+          <input
+            type="text"
+            name="task-name"
+            id="task-name-edit"
+            placeholder="Your task"
+          />
+          <input type="date" name="task-date" id="task-date-edit" />
+          <select name="task-priority" id="task-priority-edit">
+            <option value="urgent">urgent</option>
+            <option value="normal">normal</option>
+          </select>
+          <input type="submit" value="Save" />
+        </form>
+      </div>
+  </div>
    
     
 
