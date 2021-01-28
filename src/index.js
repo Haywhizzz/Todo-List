@@ -38,6 +38,7 @@ $taskForm.addEventListener("submit", (e) => {
 
   const task = new Task($title.value, $date.value, $priority.value);
   currentProject.tasks.push(task);
+  localStorage.setItem("list", JSON.stringify(task));
   task.render();
 });
 
