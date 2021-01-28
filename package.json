@@ -1,0 +1,30 @@
+{
+  "name": "Todo-List",
+  "version": "1.0.0",
+  "description": "A Todo list project using javascript",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haywhizzz/Todo-List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haywhizzz/Todo-List/issues"
+  },
+  "homepage": "https://github.com/Haywhizzz/Todo-List#readme",
+  "devDependencies": {
+    "webpack": "^5.18.0",
+    "webpack-cli": "^4.4.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
