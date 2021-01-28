@@ -22,7 +22,8 @@
   "homepage": "https://github.com/Haywhizzz/Todo-List#readme",
   "devDependencies": {
     "webpack": "^5.18.0",
-    "webpack-cli": "^4.4.0"
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "lodash": "^4.17.20"

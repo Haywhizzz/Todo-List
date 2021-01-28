@@ -42,7 +42,7 @@ export class Task {
     $div.appendChild($divTaskName);
     $div.appendChild($divTaskInfo);
 
-    $folder.appendChild($div);
+    $project.appendChild($div);
     $checkbox.addEventListener("change", () => {
       $p.classList.toggle("done");
     });
