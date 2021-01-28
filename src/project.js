@@ -21,7 +21,7 @@ class Project {
     $div.appendChild($title);
     $div.appendChild($delete);
 
-    $folder.appendChild($div);
+    $project.appendChild($div);
     $div.addEventListener("click", () => {
       currentProject = this;
       currentProject.active = false;
