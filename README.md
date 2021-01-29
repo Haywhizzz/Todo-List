@@ -1,4 +1,4 @@
-# PROJECT: LIBRARY
+# PROJECT: TODOLIST
 
 This is a simple project for keeping track of your Todo's for different projects. It has a default project directory called Test Project. You can create new projects by entering the name of the project and clicking on the create new button. By highlighting the created project, you can add task to the created project, edit and delete task. You can check the checkbox to indicate a completed task or canceled one.
  
