@@ -41,6 +41,7 @@ $taskForm.addEventListener("submit", (e) => {
   localStorage.setItem("list", JSON.stringify(task));
   task.render();
 });
+let taskData = JSON.parse(localStorage.getItem("task"));
 
 Project.renderProjects();
 const user = prompt(`what's your first name?`);
