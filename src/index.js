@@ -1,5 +1,5 @@
 import { Project, projectsArray, currentProject } from './project';
-import { Task } from './task';
+import Task from './task';
 
 const $projectForm = document.getElementById('form-project');
 
@@ -41,7 +41,6 @@ $taskForm.addEventListener('submit', (e) => {
   localStorage.setItem('list', JSON.stringify(task));
   task.render();
 });
-const taskData = JSON.parse(localStorage.getItem('task'));
 
 Project.renderProjects();
 const user = prompt('what\'s your first name?');

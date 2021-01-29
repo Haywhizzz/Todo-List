@@ -3,7 +3,7 @@ import { currentProject } from './project';
 
 const $project = document.querySelector('#task-container');
 
-export class Task {
+class Task {
   constructor(name, date, priority) {
     this.name = name;
     this.date = date;
@@ -88,3 +88,5 @@ export class Task {
     });
   }
 }
+
+export default Task;

@@ -23,22 +23,24 @@ class Project {
 
     $project.appendChild($div);
     $div.addEventListener('click', () => {
-      currentProject = this;
+      const currentProject = this;
       currentProject.active = false;
       this.renderTasks();
       const projectsClass = document.querySelectorAll('.project');
+      /* eslint-disable no-return-assign */
       projectsClass.forEach((f) => (f.classList.value = 'project'));
       const delButtons = document.querySelectorAll('.delete');
       delButtons.forEach((button) => (button.src = './img/delete.svg'));
+      /* eslint-enable no-return-assign */
       if (!$div.classList.value.includes('active')) {
         $div.classList.add('active');
         $delete.src = './img/delete-white.svg';
-      } else return;
+      }
     });
   }
 
   delete() {
-    projectsArray = projectsArray.filter((project) => project.id !== this.id);
+    this.filter((project) => project.id !== this.id);
     Project.renderProjects();
   }
 
@@ -50,15 +52,15 @@ class Project {
 
   static renderProjects() {
     $project.innerHTML = '';
-    projectsArray.forEach((project) => project.render());
+    this.forEach((project) => project.render());
   }
 
   static setCurrentProject(project) {
-    currentProject = project;
+    this[0] = project;
   }
 }
 
-let projectsArray = [new Project('Test Project')];
-let currentProject = projectsArray[0];
+const projectsArray = [new Project('Test Project')];
+const currentProject = projectsArray[0];
 
 export { Project, projectsArray, currentProject };
