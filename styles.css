@@ -36,6 +36,10 @@
        padding: 40px;
        display: flex;
      }
+
+     .feedback {
+      display: none;
+    }
      
      #projeects {
        flex: 4;
@@ -86,16 +90,18 @@
        margin-bottom: 24px;
      }
      
-     .task-name {
+     .task-title,
+     .task-description {
        flex: 8;
        display: flex;
        align-items: center;
-       justify-content: flex-start;
+       justify-content: space-between;
+       /* border: 3px solid red; */
      }
      .task-info {
-       flex: 4;
+       flex: 8;
        display: flex;
-       justify-content: flex-end;
+       justify-content: space-between;
      }
      .task-info > * {
        margin-left: 20px;
@@ -117,6 +123,12 @@
      .urgent {
        background: var(--purple);
        color: var(--culture);
+     }
+
+     
+
+     .showItem {
+       display: block;
      }
      /* Forms */
      form {

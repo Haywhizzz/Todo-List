@@ -37,13 +37,16 @@
         </form>
         <div class="card"></div>
       </div>
+      <div class="alert text-capitalize feedback">
+        write value for item
+       </div>
       <div id="tasks" class="card">
         <form id="form-task">
-          <input
-            type="text"
-            name="task-name"
-            id="task-name"
-            placeholder="Your task"
+          <input type="text" name="task-title" id="task-name"
+            placeholder="task-title"
+          />
+          <input type="text" name="task-description" id="task-description"
+            placeholder="task-description"
           />
           <input type="date" name="task-date" id="task-date"/>
           <select name="task-priority" id="task-priority">
@@ -58,11 +61,11 @@
     <div id="myModal" class="modal">
       <div class="modal-content">
         <form id="form-task-edit">
-          <input
-            type="text"
-            name="task-name"
-            id="task-name-edit"
-            placeholder="Your task"
+          <input type="text" name="task-name" id="task-name-edit"
+            placeholder="task-title"
+          />
+          <input type="text" name="task-name" id="task-description-edit"
+            placeholder="task-description"
           />
           <input type="date" name="task-date" id="task-date-edit" />
           <select name="task-priority" id="task-priority-edit">
