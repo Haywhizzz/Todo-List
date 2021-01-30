@@ -82,9 +82,9 @@ class Task {
       const $title = document.getElementById('task-name-edit');
 
       const $description = document.getElementById('task-description-edit');
-    
+
       const $date = document.getElementById('task-date-edit');
-      
+
       const $priority = document.getElementById('task-priority-edit');
 
       this.title = $title.value;
