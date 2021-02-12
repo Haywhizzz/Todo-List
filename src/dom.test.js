@@ -13,3 +13,9 @@ test('ensures function createHtmlElement returns element', () => {
       }
     
   });
+
+  test('check if the setId returns random string numbers', () => {
+    const setId = () => {
+        expect(setId).toReturn(Math.random().toString().split('.').join(''));
+      }
+  });
