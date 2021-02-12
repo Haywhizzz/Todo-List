@@ -1,15 +1,15 @@
-import { createHtmlElement, setId } from './dom';
+import { createHtmlElement } from './dom';
 import { currentProject } from './project';
 
 const $project = document.querySelector('#task-container');
 
 class Task {
-  constructor(title, description, date, priority) {
+  constructor(title, description, dueDate, priority, status) {
     this.title = title;
     this.description = description;
-    this.date = date;
+    this.date = dueDate;
     this.priority = priority;
-    this.id = setId();
+    this.status = status;
   }
 
   render() {

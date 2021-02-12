@@ -57,6 +57,14 @@ class Project {
   static setCurrentProject(project) {
     currentProject = project;
   }
+
+  addTask(task) {
+    this.tasks.push(task);
+  }
+
+  deleteTask(taskIndex) {
+    this.tasks.splice(taskIndex, 1);
+  }
 }
 
 /* eslint-disable import/no-mutable-exports */
