@@ -1,4 +1,3 @@
-import { setId } from './dom';
 import Task from './task';
 
 describe('Task', () => {
@@ -10,7 +9,6 @@ describe('Task', () => {
       'dueDate',
       'priority',
       'status',
-    //   'note',
     );
   });
 
@@ -20,11 +18,9 @@ describe('Task', () => {
       title: 'title',
       description: 'description',
       date: 'dueDate',
-      // setId: id,
       priority: 'priority',
       status: 'status',
-      // _note: 'note',
-      
+
     });
   });
 
@@ -52,9 +48,4 @@ describe('Task', () => {
     task.status = 'new status';
     expect(task.status).toBe('new status');
   });
-
-  // test('setter of note', () => {
-  //   task.note = 'new note';
-  //   expect(task.note).toBe('new note');
-  // });
 });

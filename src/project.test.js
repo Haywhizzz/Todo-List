@@ -1,18 +1,12 @@
-import { Project, projectsArray, currentProject } from './project';
+import { Project } from './project';
 
 describe('Project', () => {
-    
   let project;
   beforeEach(() => {
     project = new Project('Test Project');
-    // console.log(project);
   });
 
- 
-  
-
   test('create project', () => {
-     
     expect(project instanceof Project).toBe(true);
     expect(project.title).toBe('Test Project');
     expect(project.tasks.length).toBe(0);
@@ -30,10 +24,8 @@ describe('Project', () => {
   });
 
   test('render tasks to project', () => {
-    const task = 'test Project';
     project.addTask();
     expect(project.tasks.length).not.toBe(0);
-    // expect(project.tasks[0]).toBe('test Project');
   });
 
   test('delete tasks from project', () => {

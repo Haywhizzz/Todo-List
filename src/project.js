@@ -58,10 +58,6 @@ class Project {
     currentProject = project;
   }
 
-  // get tasks() {
-  //   return this._tasks;
-  // }
-
   addTask(task) {
     this.tasks.push(task);
   }
