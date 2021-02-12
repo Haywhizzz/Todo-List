@@ -1,3 +1,4 @@
+import { setId } from './dom';
 import Task from './task';
 
 describe('Task', () => {
@@ -16,12 +17,14 @@ describe('Task', () => {
   test('create task', () => {
     expect(task instanceof Task).toBe(true);
     expect(task).toEqual({
-      _title: 'title',
-      _description: 'description',
-      _dueDate: 'dueDate',
-      _priority: 'priority',
-      _status: 'status',
-      _note: 'note',
+      title: 'title',
+      description: 'description',
+      date: 'dueDate',
+      // setId: id,
+      priority: 'priority',
+      status: 'status',
+      // _note: 'note',
+      
     });
   });
 
@@ -50,8 +53,8 @@ describe('Task', () => {
     expect(task.status).toBe('new status');
   });
 
-  test('setter of note', () => {
-    task.note = 'new note';
-    expect(task.note).toBe('new note');
-  });
+  // test('setter of note', () => {
+  //   task.note = 'new note';
+  //   expect(task.note).toBe('new note');
+  // });
 });

@@ -3,7 +3,7 @@ import Project from './project';
 describe('Project', () => {
   let project;
   beforeEach(() => {
-    project = new Project('Test Project');
+    this.project('Test Project');
   });
 
   test('create project', () => {
